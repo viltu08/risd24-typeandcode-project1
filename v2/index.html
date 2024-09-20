@@ -11,6 +11,11 @@
   box-sizing: border-box;
 }
 	
+	html {
+  scroll-behavior: smooth;
+}
+	
+
 	.general {
 		  border: 2px dashed yellowgreen;
 		padding: 35px;
@@ -22,7 +27,9 @@
 		font-size: 16px;
 		color: black;
 		font-family: sans-serif;
-		line-height: 150%
+		line-height: 150%;
+		column-count: 3;
+		column-rule: 1px double yellow;
 	}
 	
     .head {
@@ -31,6 +38,7 @@
 		color:black;
         text-align: center;
 		text-decoration: wavy snow underline 2px;
+		text-underline-offset: 5px;
         margin-left: 550px;
 		margin-right: 550px;
 		margin-bottom: 20px;
@@ -151,7 +159,7 @@
     This article appeared in the November 2020 issue of Discover magazine as "The Quest for a Quantum Internet." Subscribe for more stories like these.
   </h5></em>
   <hr>
-   <p class="body1">
+   <p class="body1"; style=column-count: 3;>
     Call it the quantum Garden of Eden. Fifty or so miles east of New York City, on the campus of Brookhaven National Laboratory, Eden Figueroa is one of the world’s pioneering gardeners planting the seeds of a quantum internet. Capable of sending enormous amounts of data over vast distances, it would work not just faster than the current internet but faster than the speed of light — instantaneously, in fact, like the teleportation of Mr. Spock and Captain Kirk in Star Trek
   </p>
    
