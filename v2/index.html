@@ -33,6 +33,10 @@
 	.body2{
 		column-count: 3;
 		column-rule: 1px double yellow;
+		column-span: all;
+		column-gap: 40px;
+		font-family: sans-serif;
+		line-height: 150%;
 	}
 	
 	.quote{
@@ -40,6 +44,7 @@
 		color: white;
 		font-family: monospace;
 		line-height: 150%;
+		
 	}
 	
     .head {
@@ -75,6 +80,22 @@
         opacity: 1;
         transform: translateY(0);
     }
+	}
+	
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+.bounce {
+    animation: bounce 2s infinite;
 }
 	.subhead {
 		font-size: 18px;
@@ -97,8 +118,6 @@
 		letter-spacing: 20px;
 		line-height:150%;
 	}
-	
-	
 	
 	.gradient-smooth{
    background-image:linear-gradient(#3c78d8ff 30%, 70%, yellow); 
@@ -152,7 +171,7 @@
 	</div>
  
 
- <p class="date">
+ <p class="date bounce">
 	  Oct 3, 2020 | 7:00 PM | Oct 7, 2020 |  8:55 AM
 	</p>  
 
@@ -169,27 +188,21 @@
     This article appeared in the November 2020 issue of Discover magazine as "The Quest for a Quantum Internet." Subscribe for more stories like these.
   </h5></em>
   <hr>
-   <p class="body1"; style=column-count: 3;>
-    Call it the quantum Garden of Eden. Fifty or so miles east of New York City, on the campus of Brookhaven National Laboratory, Eden Figueroa is one of the world’s pioneering gardeners planting the seeds of a quantum internet. Capable of sending enormous amounts of data over vast distances, it would work not just faster than the current internet but faster than the speed of light — instantaneously, in fact, like the teleportation of Mr. Spock and Captain Kirk in Star Trek
+   <p class="body2">
+    Call it the quantum Garden of Eden. Fifty or so miles east of New York City, on the campus of Brookhaven National Laboratory, Eden Figueroa is one of the world’s pioneering gardeners planting the seeds of a quantum internet. Capable of sending enormous amounts of data over vast distances, it would work not just faster than the current internet but faster than the speed of light — instantaneously, in fact, like the teleportation of Mr. Spock and Captain Kirk in Star Trek.
+	   Sitting in Brookhaven’s light-filled cafeteria, his shoulder-length black hair fighting to free itself from the clutches of a ponytail, Figueroa — a Mexico native who is an associate professor at Stony Brook University — tries to explain how it will work. He grabs hold of two plastic coffee cup lids, a saltshaker, a pepper shaker and a small cup of water, and begins moving them around on the lunch table like a magician with cards.
   </p>
    
-  <p class="body1">
-    Sitting in Brookhaven’s light-filled cafeteria, his shoulder-length black hair fighting to free itself from the clutches of a ponytail, Figueroa — a Mexico native who is an associate professor at Stony Brook University — tries to explain how it will work. He grabs hold of two plastic coffee cup lids, a saltshaker, a pepper shaker and a small cup of water, and begins moving them around on the lunch table like a magician with cards.
-  </p>
 
   <p class="quote">
   “I’m going to have a detector here and a detector here,” he says, pointing to the two lids. “Now there are many possibilities. Either those two go in here” — he points to the saltshaker — “or the two go in there,” nodding at the cup of water. “And then depending on what happened there, that will be the state,” he says, holding up the black pepper shaker, “that I’m preparing here.” 
   </p>
 
-   <p class="body1">
+   <p class="body2">
   Got that? Me neither. But don’t worry. Only a few hundred or so physicists in the U.S., Europe and China really comprehend how to exploit some of the weirdest, most far-out aspects of quantum physics. In this strange arena, objects can exist in two or more states at the same time, called superpositions; they can interact with each other instantly over long distances; they can flash in and out of existence. Scientists like Figueroa want to harness that bizarre behavior and turn it into a functioning, new-age internet — one, they say, that will be ironclad for sending secure messages, impervious to hacking.
-  </p>
-
-   <p class="body1">
+	    <br>
   Already, Figueroa says his group has transmitted what he called “polarization states” between the Stony Brook and Brookhaven campuses using fiber infrastructure, adding up to 85 miles. Kerstin Kleese van Dam, director of Brookhaven Lab’s Computational Science Initiative, says it is “one of the largest quantum networks in the world, and the longest in the United States.”
-  </p>
-
-  <p class="body1">
+	   <br>
   Next, Figueroa hopes to teleport his quantum-based messages through the air, across Long Island Sound, to Yale University in Connecticut. Then he wants to go 50 miles east, using existing fiber-optic cables to connect with Long Island and Manhattan.
   </p>
   
