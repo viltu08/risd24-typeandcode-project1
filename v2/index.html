@@ -26,6 +26,22 @@
 		padding: 100px;
     }
 
+	.animated-paragraph {
+    font-size: 24px;
+		font-family:monospace;
+		   text-align: center;
+    color: white;
+    opacity: 0;
+    transform: translateY(200px);
+    animation: fadeInUp 1s forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 	.subhead {
 		font-size: 18px;
 		color:black;
@@ -33,6 +49,7 @@
         margin: 15px;
 		padding: 20px;
 		font-family:sans-serif;
+		animation: mymove 5s infinite;
 	}
 	
 	.general {
@@ -57,30 +74,22 @@
 		The <span style="color:blue;font-weight:bold;">Quantum</span> Internet Will Blow Your Mind
 	</div>
 
-  <pre style="color:cornflowerblue; font-family: monospace">
+  <pre style="color:white; font-family: monospace">
 	
-       O
-      /|\
-     / | \
-    /  |  \
-   O---O---O
-    \  |  /
-     \ | / 
-      \|/ 
- O O O O O O O
-      /|\
-     / | \
-    /  |  \
-   O---O---O
-    \  |  /
-     \ | /
-      \|/
-       O
+       O                                                                                                                                                                o
+      /|\                                                                                                                                                              /|\    
+     / | \                                                                                                                                                            / | \
+    /  |  \                                                                                                                                                          /  |  \
+	
+	
+	
+	
+
 
 </pre>
 	
 	
-	Here’s What It Will Look Like.
+	<p class="animated-paragraph">Here’s What It Will Look Like.</p>
 	
   <div class="subhead">
 	   The next generation of the Internet will rely on revolutionary new tech — allowing for unhackable networks and information that travels faster than the speed of light.
