@@ -110,7 +110,7 @@
   animation: vibrate 0.1s infinite;
 }
 	
-/* Learnt vibration code from https://codepen.io/imagekit_io/pen/OJxapRm and experimented */
+/* Learnt vibration code from https://codepen.io/imagekit_io/pen/OJxapRm and experimented to understand transform*/
 	
     @keyframes fade {
     0% {
@@ -184,41 +184,6 @@
 	.gradient-smooth{
    background-image:linear-gradient(#3c78d8ff 30%, 70%, yellow); 
 }
-
-.square {
-  height: 500px;
-  width: 500px;
-  background-color: yellow;
-	border-radius: 20px;
-}
-	
-	.square2 {
-  height: 400px;
-  width: 400px;
-  background-color: blue;
-	border-radius: 20px;
-}
-	
-		.square3 {
-  height: 300px;
-  width: 300px;
-  background-color: yellow;
-	border-radius: 20px;
-}
-	
-			.square4 {
-  height: 200px;
-  width: 200px;
-  background-color: blue;
-	border-radius: 20px;
-}
-
-			.square5 {
-  height: 100px;
-  width: 100px;
-  background-color: yellow;
-	border-radius: 20px;
-}
 	
 	.quotehighlight {
   height: 10ex;
@@ -231,36 +196,21 @@
 .quotehighlight:hover {
   background-color: yellow;
 }
+	/*https://codepen.io/nelledejones/pen/gOOPWrK Used gelatine code from here to understand how to apply transform*/
 	
-.sun {
-  background-color: yellow;
-  border-radius: 50%;
-  height: 5px;
-	width: 5px;
-	aspect-ratio: 1 / 1;
-  animation:
-    4s linear 0s infinite alternate rise,
-    4s linear 0s infinite alternate bounce2;
-}
-
-@keyframes rise {
-  from {
-    transform: translateY(100vh);
-  }
-  to {
-    transform: translateY(0);
-  }
-}
-
-@keyframes bounce2 {
-  from {
-    transform: translateX(-50vw);
-  }
-  to {
-    transform: translateX(110vw);
-  }
+.gelatine {
+  animation: gelatine 0.5s infinite;
+font-size: 200px;
+	color: white;
+	text-align: center;
 }
 	
+@keyframes gelatine {
+  from, to { transform: scale(1, 1); }
+  25% { transform: scale(0.9, 1.1); }
+  50% { transform: scale(1.1, 0.9); }
+  75% { transform: scale(0.95, 1.05); }
+}
 	
 	.stephead {
 		font-size: 48px;
@@ -275,7 +225,7 @@
 	
 <body class="general">
 	
-<div class="mainhead">
+<div class="mainhead gradient-smooth" style=border-radius:200px;>
 	The Quantum Internet Will Blow Your Mind
 	</div>
 		
@@ -352,33 +302,12 @@
   Next, Figueroa hopes to teleport his quantum-based messages through the air, across Long Island Sound, to Yale University in Connecticut. Then he wants to go 50 miles east, using existing fiber-optic cables to connect with Long Island and Manhattan.
   </div>
 	
-	<div class="square sun">
+	<br>
+	<div class="gelatine"> ∞
 	</div>
 	
 	<br>
 	
-	<div class="square sun">
-	</div>
-	
-	<br>
-	
-	<div class="square sun">
-	</div>
-	
-	<br>
-	
-	<div class="square sun">
-	</div>
-	
-	<br>
-	
-	<div class="square sun">
-	</div>
-	
-	<br>
-	
-	<div class="square sun">
-	</div>
 	
   <hr>
   <img
@@ -404,33 +333,12 @@
 	   And, after spending two days with Figueroa last summer, following him around the campus of Brookhaven and the nearby Stony Brook, getting a firsthand look at his futuristic equipment, talking with other physicists around the world, reading a few books and perusing dozens of articles and studies, I began to kind of, sort of, get it. Not in all its unsettling depths, but in the general way that I understand how an internal-combustion engine goes vroom or why a toilet bowl flushes. And you can, too.
   </div>
 	
-	<div class="square sun">
+		<br>
+	<div class="gelatine"> π
 	</div>
 	
 	<br>
 	
-	<div class="square sun">
-	</div>
-	
-	<br>
-	
-	<div class="square sun">
-	</div>
-	
-	<br>
-	
-	<div class="square sun">
-	</div>
-	
-	<br>
-	
-	<div class="square sun">
-	</div>
-	
-	<br>
-	
-	<div class="square sun">
-	</div>
 	
     <hr>
 	<br>
@@ -452,33 +360,11 @@
 
   </div>
 	
-	<div class="square sun">
+			<br>
+	<div class="gelatine"> µ
 	</div>
 	
 	<br>
-	
-	<div class="square sun">
-	</div>
-	
-	<br>
-	
-	<div class="square sun">
-	</div>
-	
-	<br>
-	
-	<div class="square sun">
-	</div>
-	
-	<br>
-	
-	<div class="square sun">
-	</div>
-	
-	<br>
-	
-	<div class="square sun">
-	</div>
 	
   <hr>
   <img
@@ -553,33 +439,12 @@
     Another problem remains, however — one that neither Figueroa nor Katramatos (nor any other quantum engineer in the world) has fully figured out so far: how to successfully transmit quantum-entangled photons via fiber-optic cables past a barrier that appears around the 60-mile mark. Beyond it, photons unintentionally interact with the cable, its housing or even sunlight from above-ground, thereby destroying its entanglement.
   </div>
 	
-	<div class="square sun">
+				<br>
+	<div class="gelatine"> ⌘
 	</div>
 	
 	<br>
 	
-	<div class="square sun">
-	</div>
-	
-	<br>
-	
-	<div class="square sun">
-	</div>
-	
-	<br>
-	
-	<div class="square sun">
-	</div>
-	
-	<br>
-	
-	<div class="square sun">
-	</div>
-	
-	<br>
-	
-	<div class="square sun">
-	</div>
   
   <img
   class="fit-picture"
@@ -626,34 +491,11 @@
     But 21 years later, in the fall of 2018, Oxford University researchers reported exactly what Bennett had said was “utterly infeasible”: the entanglement of a living bacterium with a photon of light. Not all physicists were persuaded by the findings, however, based as they were on the Oxford team’s analysis of another group’s experiment. But then, nobody knows how far the quantum revolution will go — certainly not Figueroa.
   </div>
 	
-	<div class="square sun">
+					<br>
+	<div class="gelatine"> ¶
 	</div>
 	
 	<br>
-	
-	<div class="square sun">
-	</div>
-	
-	<br>
-	
-	<div class="square sun">
-	</div>
-	
-	<br>
-	
-	<div class="square sun">
-	</div>
-	
-	<br>
-	
-	<div class="square sun">
-	</div>
-	
-	<br>
-	
-	<div class="square sun">
-	</div>
-  
    <img
   class="fit-picture"
   src="/risd24-typeandcode-project1/v1/IM_5.jpeg"
@@ -736,7 +578,9 @@ You’re almost there! Now you need to entangle the qubit called Jennifer with t
 	Dan Hurley is a science reporter and longtime contributor to Discover.
 	</div>
 
-	
+<div class="stephead">
+	First HTML + CSS site by Vishakha Ruhela!
+	</div>	
 </body>
   
 </html>
