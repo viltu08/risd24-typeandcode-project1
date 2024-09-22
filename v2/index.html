@@ -15,12 +15,36 @@
 }
 	
 	.general {
-		  border: 8px dashed lightblue;
+		border: 8px dashed lightblue;
 		padding: 100px;
 		background: cornflowerblue;
 		background-clip: content-box;
+		animation: border-dance 2s infinite linear;
 	}
+	
+.animated-border {
+    width: 250%;
+    height: 350%;
+    position: absolute;
+    z-index: -10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: conic-gradient(transparent, transparent, transparent, red, orange, transparent, transparent, transparent);
+    animation: rotate 5s infinite linear;
+}
 
+@keyframes rotate {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+	
 	.mainhead{
 		font-size: 100px;
 		font-family: monospace;
@@ -224,7 +248,7 @@ font-size: 150px;
 	
 <body class="general">
 	
-<div class="mainhead gradient-smooth" style=border-radius:150px;>
+<div class="mainhead gradient-smooth " style=border-radius:150px;>
 	The Quantum Internet Will Blow Your Mind
 	</div>
 		
@@ -235,7 +259,11 @@ font-size: 150px;
 	</div>
    
    <div class="subhead">
+	   	   𓆝𓆟𓆞𓆝𓆟
+	   <br>
     By Dan Hurley
+	   <br>
+	   𓆝𓆟𓆞𓆝𓆟
 	</div>
  
 
@@ -249,10 +277,10 @@ font-size: 150px;
 	
 	<br>
  <img
-  class="fit-picture"
+  class="fit-picture";
   src="/risd24-typeandcode-project1/v1/IM_1.jpeg"
   alt="(IM_1.jpeg)"
-      width="300" height="200"
+      width="500" height="400"
       />
   
   <em><figcaption>(Credit: Jurik Peter/Shutterstock)</figcaption></em>
