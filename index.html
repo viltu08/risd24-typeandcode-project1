@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Type + Code Project 1</title>
-	
-	<!-- Required code for using a font from Google Fonts -->
-	
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+
+    <!-- Required code for using a font from Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
 
     <style>
-		
-		/* Import the Inconsolata font family from google */
-		
-		@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
-		
+        /* Import the Inconsolata font family from google */
+
+        @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+
         /* Project colors to refer to
         Blue: #7CB9E8
         Navy: #002D62
@@ -56,8 +56,8 @@
             text-align: center;
         }
 
-		/* Took time to remember that using list type as none can help remove bullets */
-		
+        /* Took time to remember that using list type as none can help remove bullets */
+
         ul {
             list-style-type: none;
             padding: 0;
@@ -75,8 +75,8 @@
             text-align: center;
         }
 
-		/* Used display as inline block for flexibility */
-		
+        /* Used display as inline block for flexibility */
+
         a {
             text-decoration: none;
             color: white;
@@ -87,94 +87,100 @@
             display: inline-block;
             transition: background-color 0.4s ease, transform 0.2s ease;
         }
-		
-		/* Applying color using transition for hovering */
-		/* Use transform scale to make the button look bigger on hovering */
-		
+
+        /* Applying color using transition for hovering */
+        /* Use transform scale to make the button look bigger on hovering */
+
         a:hover {
             background-color: #e8491d;
             transform: scale(1.05);
         }
-		
-		/* Adding style for extra information about the site on the bottom*/
-		
+
+        /* Adding style for extra information about the site on the bottom*/
+
         footer {
             margin-top: 20px;
             color: white;
             text-align: center;
-			align-items: bottom;
+            align-items: bottom;
         }
 
-		/* Okay, let's add media queries for body */
-		
-		@media only screen and (max-width: 1200px) {
-			body {
-				background-color: #7CB9E8;
-			}
-		}
-		@media only screen and (max-width: 1000px) {
-			body {
-				background-color: cornflowerblue;
-			}
-		}
-		@media only screen and (max-width: 800px) {
-			body {
-				background-color: grey;
-			}
-		}
-		@media only screen and (max-width: 600px) {
-			body {
-				background-color: lightgrey;
-			}
-				}
-		@media only screen and (max-width: 400px) {
-			body {
-				background-color: #B2FFFF;
-				max-width: 50%;
-			}
-			
-			/* Now, let's add media queries for h1 */
-			/* I want it to change only when its less than 400 px */
-							
-			@media only screen and (max-width: 400px) {
-			h1 {
-				margin: 20px;
-            color: #002D62;
-            text-align: center;
-			max-width: 100%;
-			position: relative;
-			}
+        /* Okay, let's add media queries for body */
 
-		
+        @media only screen and (max-width: 1200px) {
+            body {
+                background-color: #7CB9E8;
+            }
+        }
+
+        @media only screen and (max-width: 1000px) {
+            body {
+                background-color: cornflowerblue;
+            }
+        }
+
+        @media only screen and (max-width: 800px) {
+            body {
+                background-color: grey;
+            }
+        }
+
+        @media only screen and (max-width: 600px) {
+            body {
+                background-color: lightgrey;
+            }
+        }
+
+        @media only screen and (max-width: 400px) {
+            body {
+                background-color: #B2FFFF;
+                max-width: 50%;
+            }
+
+            /* Now, let's add media queries for h1 */
+            /* I want it to change only when its less than 400 px */
+
+            @media only screen and (max-width: 400px) {
+                h1 {
+                    margin: 20px;
+                    color: #002D62;
+                    text-align: center;
+                    max-width: 100%;
+                    position: relative;
+                }
     </style>
 </head>
+
 <body>
 
     <h1>Type + Code Project 1</h1>
     <h2>Vishakha Ruhela</h2>
-<div>
-    <ul>
-        <li>
-            <a href="https://www.discovermagazine.com/technology/the-quantum-internet-will-blow-your-mind-heres-what-it-will-look-like" target="_blank">Original Article</a>
-        </li>
-        <li>
-            <a href="v1/"target="_blank">Version 1 <span style="font-weight: 400;">(HTML)</span></a>
-        </li>
-        <li>
-            <a href="v2/"target="_blank">Version 2  <span style="font-weight: 400;">(HTML + CSS)</span></a>
-        </li>
-        <li>
-            <a href="v3/"target="_blank">Version 3  <span style="font-weight: 400;">(HTML + CSS + Flexbox)</span></a>
-        </li>
-    </ul>
-			</div>
-	
-<!-- Using &copy to make the copyright symbol -->
+    <div>
+        <ul>
+            <li>
+                <a href="https://www.discovermagazine.com/technology/the-quantum-internet-will-blow-your-mind-heres-what-it-will-look-like"
+                    target="_blank">Original Article</a>
+            </li>
+            <li>
+                <a href="v1/" target="_blank">Version 1 <span style="font-weight: 400;">(HTML)</span></a>
+            </li>
+            <li>
+                <a href="v2/" target="_blank">Version 2 <span style="font-weight: 400;">(HTML + CSS)</span></a>
+            </li>
+            <li>
+                <a href="v3/" target="_blank">Version 3 <span style="font-weight: 400;">(HTML + CSS +
+                        Flexbox)</span></a>
+            </li>
+        </ul>
+    </div>
 
-	
+    <!-- Using &copy to make the copyright symbol -->
+
+
     <footer>
         <p>&copy; 2024 Vishakha Ruhela</p>
     </footer>
 
 </body>
+
 </html>
