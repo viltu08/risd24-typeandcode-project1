@@ -88,6 +88,20 @@
 			animation: gradient-animation 10s infinite;
 			background-size:400% 400%;
         }
+		
+		p{
+			font-family: 'Mukta';
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			padding: 100px;
+			margin-left: 200px;
+			margin-right: 200px;
+			text-align: left;
+			justify-content: center;
+			width: 80%;
+			height: auto;	
+		}
 
         h1 {
             margin: 20px;
@@ -101,6 +115,10 @@
             font-size: 50px;
             color: white;
             text-align: left;
+			padding: 100px;
+		margin-left: 200px;
+			margin-right: 200px;
+	
         }
 
         /* Lists */
@@ -174,21 +192,7 @@
 			box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
         }
 		
-		
-		text {
-     font-family: 'Mukta', sans-serif;
-			color: #010101;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-			gap: 20px;
-            width: 100%;
-			height: auto;
-			text-align: left;
-			margin: 200px;
-			grid-template-columns: 1fr 5fr;
-        }
-		
+
 			/* Footers */
 
         footer {
@@ -233,11 +237,21 @@
             @media only screen and (max-width: 400px) {
                 h1 {
                     margin: 20px;
-					font-size: 48px;
+					font-size: 24px;
                     text-align: center;
                     max-width: 100%;
                     position: relative;
                 }
+				
+				  @media only screen and (max-width: 400px) {
+                h2 {
+                    margin: 20px;
+					font-size: 12px;
+                    text-align: center;
+                    max-width: 100%;
+                    position: relative;
+                }
+				
 				
 				   @media only screen and (max-width: 400px) {
                 ul {
@@ -284,7 +298,7 @@
             </li>
         </ul>
 
-    <h1>The Quantum Internet <br>Will Blow Your Mind.<br> <span style="color:#002D62;">Here’s What It Will Look Like</span></h1>
+    <h1>The Quantum Internet <br>Will Blow Your Mind.<br> <span style="color:#002D62;"><br>Here’s What It Will Look Like</span></h1>
 	<br>
     <h2>The next generation of the Internet will rely on revolutionary new tech — allowing for unhackable networks and information that travels faster than the speed of light.</h2>
 
@@ -298,7 +312,7 @@
 	<br>
 	
 	
-<div class="text">
+<div>
 	<p>
 	Call it the quantum Garden of Eden. Fifty or so miles east of New York City, on the campus of Brookhaven National Laboratory, Eden Figueroa is one of the world’s pioneering gardeners planting the seeds of a quantum internet. Capable of sending enormous amounts of data over vast distances, it would work not just faster than the current internet but faster than the speed of light — instantaneously, in fact, like the teleportation of Mr. Spock and Captain Kirk in Star Trek.
 
