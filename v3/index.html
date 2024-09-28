@@ -16,10 +16,10 @@
         /* Import the Inconsolata font family from google */
 
         @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
-		
-		   /* Import the Mukta font family from google */
-		
-		@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+
+        /* Import the Mukta font family from google */
+
+        @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
 
         /* Project colors to refer to
 		Black:#010101
@@ -28,7 +28,6 @@
 		NAVY: #1D3853
 		light green: #c5d893
 		grey: #7a9295
-		red: #ac5b4d
 		orange: #fc9d45
 		light blue: #9fcdfd
 		japanese green: #099d02
@@ -41,87 +40,95 @@
         }
 
 
-		/* Grid */
-		
-		.grid-parent {
-			display: grid;
-			grid-template-columns: 1fr ;
-			gap: 20px;
-			padding: 20px;
-		}
-		
-		.grid-parent div {
-			height: 80px;
-			border: 10px solid black;
-		}
-		
+        /* Grid */
 
-			/* Keyframes */
-				
-				@keyframes gradient-animation {
-    0% {
-        background: linear-gradient(45deg, #23C686, #1D3853);
-    }
-    25% {
-        background: linear-gradient(45deg, #1D3853, #c5d893);
-    }
-    50% {
-        background: linear-gradient(45deg, #9fcdfd, #1D3853);
-    }
-    75% {
-        background: linear-gradient(45deg, #099d02, #c5d893);
-    }
-    100% {
-        background: linear-gradient(45deg, #fbfcf6, #23C686);
-    }
-}
-	
+        .grid-parent {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .grid-parent div {
+            height: 80px;
+            border: 10px solid black;
+        }
+
+
+        /* Keyframes */
+
+        @keyframes gradient-animation {
+            0% {
+                background: linear-gradient(45deg, #23C686, #1D3853);
+            }
+
+            25% {
+                background: linear-gradient(45deg, #1D3853, #c5d893);
+            }
+
+            50% {
+                background: linear-gradient(45deg, #9fcdfd, #1D3853);
+            }
+
+            75% {
+                background: linear-gradient(45deg, #099d02, #c5d893);
+            }
+
+            100% {
+                background: linear-gradient(45deg, #fbfcf6, #23C686);
+            }
+        }
+
         body {
             font-family: 'Inconsolata', sans-serif;
             display: flex;
             flex-direction: row;
-			flex-wrap: wrap;
+            flex-wrap: wrap;
             align-items: center;
             justify-content: center;
-			min-height: 100vh;
-			background-repeat: no-repeat;
-			background: linear-gradient(45deg, #23C686, #1D3853);
-			padding: 20px;
-			animation: gradient-animation 10s infinite;
-			background-size:200% 200%;
-			background-position: center;
+            min-height: 100vh;
+            background-repeat: no-repeat;
+            background: linear-gradient(45deg, #23C686, #1D3853);
+            padding: 20px;
+            animation: gradient-animation 10s infinite;
+            background-size: 200% 200%;
+            background-position: center;
         }
-		
-		p{
-			font-family: 'Mukta';
-			display: flex;
-			flex-direction: row;
-			flex-wrap: wrap;
-			padding: 100px;
-			margin-left: 200px;
-			margin-right: 200px;
-			text-align: left;
-			justify-content: center;
-			width: 80%;
-			height: auto;	
-		}
+
+        p {
+            font-family: 'Mukta';
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            padding: 100px;
+            margin-left: 200px;
+            margin-right: 200px;
+			margin-top: 10px;
+			margin-bottom: 10px;
+            text-align: left;
+            justify-content: center;
+            width: 80%;
+            height: auto;
+        }
 
         h1 {
-            margin: 20px;
+            margin-top: 10px;
+			margin-bottom: 10px;
             color: white;
             text-align: center;
-			font-size:75px;
+            font-size: 75px;
         }
 
         h2 {
-            margin: 10px;
+            margin-top: 10px;
+			margin-bottom: 10px;
             font-size: 50px;
             color: white;
             text-align: left;
-			padding: 100px;
-		margin-left: 200px;
-			margin-right: 200px;
-	
+            padding: 10px;
+            margin-left: 200px;
+            margin-right: 200px;
+
         }
 
         /* Lists */
@@ -133,15 +140,15 @@
             display: flex;
             flex-direction: row;
             align-items: center;
-			gap: 20px;
+            gap: 20px;
             width: 100%;
-			height: auto;
+            height: auto;
         }
 
         ul li {
             margin: 10px 0;
             width: 100%;
-			height: auto;
+            height: auto;
             max-width: 300px;
             text-align: center;
         }
@@ -154,49 +161,62 @@
             font-weight: bold;
             padding: 10px;
             background-color: rgba(255, 255, 255, 0.2);
-			backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
             border-radius: 10px;
-			width: 100%;
-			height: 50px;
-			display: flex;
-			flex-wrap: wrap;
-			align-items: center;
-			justify-content: center;
+            width: 100%;
+            height: 50px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
             transition: background-color 0.4s ease, transform 0.2s ease;
         }
 
         a:hover {
             background-color: #fc9d45;
             transform: scale(1.1);
-			border-radius:40px;
-			box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            border-radius: 40px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
         }
-		
-		a2{
+
+        a2 {
             text-decoration: none;
             color: #002D62;
             font-weight: bold;
             padding: 10px;
             background-color: rgba(255, 255, 255, 0.2);
-			backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
             border-radius: 10px;
-			width: 100%;
-			height: 50px;
-			display: flex;
-			flex-wrap: wrap;
-			align-items: center;
-			justify-content: center;
+            width: 100%;
+            height: 50px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
         }
-		
-		 a2:hover {
-            background-color: #1D3853;
-			color: #fbfcf6;
-			border-radius:40px;
-			box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-        }
-		
 
-			/* Footers */
+        a2:hover {
+            background-color: #1D3853;
+            color: #fbfcf6;
+            border-radius: 40px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+		
+		.text-window {
+    background-color: #fbfcf6;
+			color: #010101;
+			 background-color: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+    border: 2px solid #fc9d45;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    width: 50%hv;
+    max-width: 90%;
+}
+
+
+        /* Footers */
 
         footer {
             margin-top: 20px;
@@ -204,79 +224,68 @@
             text-align: center;
             align-items: bottom;
         }
-			
-			
-	
+
+
+
         /* Media Queries */
 
         @media only screen and (max-width: 1200px) {
-            body {
-
-            }
+            body {}
         }
 
         @media only screen and (max-width: 1000px) {
-            body {
-
-            }
+            body {}
         }
 
         @media only screen and (max-width: 800px) {
-            body {
-
-            }
+            body {}
         }
 
         @media only screen and (max-width: 600px) {
-            body {
-            }
+            body {}
         }
 
         @media only screen and (max-width: 400px) {
-            body {
-
-            }
+            body {}
 
             @media only screen and (max-width: 400px) {
                 h1 {
                     margin: 20px;
-					font-size: 24px;
+                    font-size: 24px;
                     text-align: center;
                     max-width: 100%;
                     position: relative;
                 }
-				
-				  @media only screen and (max-width: 400px) {
-                h2 {
-                    margin: 20px;
-					font-size: 12px;
-                    text-align: center;
-                    max-width: 100%;
-                    position: relative;
-                }
-				
-				
-				   @media only screen and (max-width: 400px) {
-                ul {
-                    margin: 0px;
-                     display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-					gap: 10px;
-                }
-				
+
+                @media only screen and (max-width: 400px) {
+                    h2 {
+                        margin: 20px;
+                        font-size: 12px;
+                        text-align: center;
+                        max-width: 100%;
+                        position: relative;
+                    }
+
+
+                    @media only screen and (max-width: 400px) {
+                        ul {
+                            margin: 0px;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
+                            gap: 10px;
+                        }
     </style>
 </head>
 
 <body>
 
-	    <div class="grid-parent">
-			
+    <div class="grid-parent">
+
         <ul>
             <li>
-                <a href=""
-                    target="_blank">Introduction</a>
+                <a href="" target="_blank">Introduction</a>
             </li>
             <li>
                 <a href="" target="_blank">Untangling Entanglement</a>
@@ -287,52 +296,96 @@
             <li>
                 <a href="" target="_blank">Entanglement Swapping</a>
             </li>
-			  <li>
+            <li>
                 <a href="" target="_blank">The Quantum Future</a>
             </li>
-			  <li>
+            <li>
                 <a href="" target="_blank">DIY Quantum Internet</a>
             </li>
         </ul>
 
-    <h1>The Quantum Internet <br>Will Blow Your Mind.<br> <span style="color:#002D62;"><br>Here’s What It Will Look Like</span></h1>
-	<br>
+        <h1>The Quantum Internet <br>Will Blow Your Mind.<br> <span style="color:#002D62;"><br>Here’s What It Will Look
+                Like</span></h1>
+
+        <h2>The next generation of the Internet will rely on revolutionary new tech — allowing for unhackable networks
+            and information that travels faster than the speed of light.</h2>
+
+    </div>
+    <div class="a2">
+
+        <a href="https://www.discovermagazine.com/author/dhurley/1" target="_blank">By Dan Hurley</a>
+    </div>
+
+    <br>
+    <br>
+
+
+    <div class=grid-parent>
+        <p>
+            Call it the quantum Garden of Eden. Fifty or so miles east of New York City, on the campus of Brookhaven
+            National Laboratory, Eden Figueroa is one of the world’s pioneering gardeners planting the seeds of a
+            quantum internet. Capable of sending enormous amounts of data over vast distances, it would work not just
+            faster than the current internet but faster than the speed of light — instantaneously, in fact, like the
+            teleportation of Mr. Spock and Captain Kirk in Star Trek.
+
+            Sitting in Brookhaven’s light-filled cafeteria, his shoulder-length black hair fighting to free itself from
+            the clutches of a ponytail, Figueroa — a Mexico native who is an associate professor at Stony Brook
+            University — tries to explain how it will work. He grabs hold of two plastic coffee cup lids, a saltshaker,
+            a pepper shaker and a small cup of water, and begins moving them around on the lunch table like a magician
+            with cards.
+
+            “I’m going to have a detector here and a detector here,” he says, pointing to the two lids. “Now there are
+            many possibilities. Either those two go in here” — he points to the saltshaker — “or the two go in there,”
+            nodding at the cup of water. “And then depending on what happened there, that will be the state,” he says,
+            holding up the black pepper shaker, “that I’m preparing here.”
+
+            Got that? Me neither. But don’t worry. Only a few hundred or so physicists in the U.S., Europe and China
+            really comprehend how to exploit some of the weirdest, most far-out aspects of quantum physics. In this
+            strange arena, objects can exist in two or more states at the same time, called superpositions; they can
+            interact with each other instantly over long distances; they can flash in and out of existence. Scientists
+            like Figueroa want to harness that bizarre behavior and turn it into a functioning, new-age internet — one,
+            they say, that will be ironclad for sending secure messages, impervious to hacking.
+
+            Already, Figueroa says his group has transmitted what he called “polarization states” between the Stony
+            Brook and Brookhaven campuses using fiber infrastructure, adding up to 85 miles. Kerstin Kleese van Dam,
+            director of Brookhaven Lab’s Computational Science Initiative, says it is “one of the largest quantum
+            networks in the world, and the longest in the United States.”
+
+            Next, Figueroa hopes to teleport his quantum-based messages through the air, across Long Island Sound, to
+            Yale University in Connecticut. Then he wants to go 50 miles east, using existing fiber-optic cables to
+            connect with Long Island and Manhattan.
 			
-			<img src="https://drive.usercontent.google.com/download?id=12b2uSkLuSgB_miVFgIUlBaz17pF_OG0X&export=view&authuser=1
-" alt="Q1">
+			<br><br>
 			
-    <h2>The next generation of the Internet will rely on revolutionary new tech — allowing for unhackable networks and information that travels faster than the speed of light.</h2>
+			Kleese Van Dam says that although other groups in Europe and China have more funding and have been working much longer on the technology, in the U.S. “[Figueroa] is leading when it comes to having the knowledge and the equipment necessary to put together a quantum network in the next year or two.”
 
-		</div>
-			<div class="a2">
-				
-		<a href="https://www.discovermagazine.com/author/dhurley/1" target="_blank">By Dan Hurley</a>
-					</div>
-	
-	<br>
-	<br>
-	
-	
-<div>
-	<p>
-	Call it the quantum Garden of Eden. Fifty or so miles east of New York City, on the campus of Brookhaven National Laboratory, Eden Figueroa is one of the world’s pioneering gardeners planting the seeds of a quantum internet. Capable of sending enormous amounts of data over vast distances, it would work not just faster than the current internet but faster than the speed of light — instantaneously, in fact, like the teleportation of Mr. Spock and Captain Kirk in Star Trek.
+David Awschalom, a legend in the field who is a professor of spintronics and quantum information at the University of Chicago’s Pritzker School of Molecular Engineering and director of the Chicago Quantum Exchange, calls Figueroa’s work “a fantastic project being done very thoughtfully and very well. I’m always cautious about saying something is the biggest or fastest,” he says. “It’s a worldwide effort right now in building prototype quantum networks as the next step toward building a quantum internet.” Other efforts to build quantum networks, he says, are underway in Japan, the U.K., the Netherlands and China — not to mention his own group’s project in Chicago.
 
-Sitting in Brookhaven’s light-filled cafeteria, his shoulder-length black hair fighting to free itself from the clutches of a ponytail, Figueroa — a Mexico native who is an associate professor at Stony Brook University — tries to explain how it will work. He grabs hold of two plastic coffee cup lids, a saltshaker, a pepper shaker and a small cup of water, and begins moving them around on the lunch table like a magician with cards.
+U.S. efforts have lately been given a boost by the U.S. Department of Energy’s announcement in January that it would spend as much as $625 million to fund two to five quantum research centers. The move is part of the U.S. National Quantum Initiative signed into law by President Donald Trump on Dec. 21, 2018.
 
-“I’m going to have a detector here and a detector here,” he says, pointing to the two lids. “Now there are many possibilities. Either those two go in here” — he points to the saltshaker — “or the two go in there,” nodding at the cup of water. “And then depending on what happened there, that will be the state,” he says, holding up the black pepper shaker, “that I’m preparing here.”
+But what, really, is this thing called a quantum internet? How does it work? Figueroa, enraptured by his vision, told me of his plan with contagious enthusiasm, laughing sometimes as if it were all so simple that a child (or even an English major) could understand it. Not wanting to disappoint, I nodded my head and pretended that I knew what the hell he was talking about.
+			
+			<br><br>
+			
+			And, after spending two days with Figueroa last summer, following him around the campus of Brookhaven and the nearby Stony Brook, getting a firsthand look at his futuristic equipment, talking with other physicists around the world, reading a few books and perusing dozens of articles and studies, I began to kind of, sort of, get it. Not in all its unsettling depths, but in the general way that I understand how an internal-combustion engine goes vroom or why a toilet bowl flushes. And you can, too.
+			
+		  </p>      
 
-Got that? Me neither. But don’t worry. Only a few hundred or so physicists in the U.S., Europe and China really comprehend how to exploit some of the weirdest, most far-out aspects of quantum physics. In this strange arena, objects can exist in two or more states at the same time, called superpositions; they can interact with each other instantly over long distances; they can flash in and out of existence. Scientists like Figueroa want to harness that bizarre behavior and turn it into a functioning, new-age internet — one, they say, that will be ironclad for sending secure messages, impervious to hacking.
+    </div>
+ <div class="text-window">
+        <h1 style="color:#002D62;">Untangling Entanglement</h1>
+        <p>Leading me to the back room of his laboratory at Stony Brook, where he heads the quantum information technology group, Figueroa shows me a large table covered with a labyrinth of tiny mirrors, lasers and electronics. “This is where we create these photons that carry superpositions,” he says, “that then we can send into the fiber. OK? It’s very simple.”
 
-Already, Figueroa says his group has transmitted what he called “polarization states” between the Stony Brook and Brookhaven campuses using fiber infrastructure, adding up to 85 miles. Kerstin Kleese van Dam, director of Brookhaven Lab’s Computational Science Initiative, says it is “one of the largest quantum networks in the world, and the longest in the United States.”
+Right.
 
-Next, Figueroa hopes to teleport his quantum-based messages through the air, across Long Island Sound, to Yale University in Connecticut. Then he wants to go 50 miles east, using existing fiber-optic cables to connect with Long Island and Manhattan.
-	</p>
-	</div>
+Curiously, all the implications of the quantum internet can be traced back to an experiment so straightforward you can do it in your living room. Called the double slit experiment, it was first performed more than 200 years ago by British polymath Thomas Young.
 
+When shining a beam of light at a flat panel of material cut with two slits side-by-side, Young saw that the light passing through the slits created an interference pattern of dark and bright bands on a screen behind the panel. Only waves — light waves — emanating from the two slits could make such a pattern. Young concluded that Isaac Newton, who published a particle theory of light in 1704, was wrong. Light came in waves, not in particles.</p>
+    </div>
 	
     <footer>
-        <p2>&copy; 2024 Vishakha Ruhela<br>	Oct 3, 2020 7:00 PM <br>
-				Last updated: Oct 7, 2020 8:55 AM</p2>
+        <p2>&copy; 2024 Vishakha Ruhela<br> Oct 3, 2020 7:00 PM <br>
+            Last updated: Oct 7, 2020 8:55 AM</p2>
     </footer>
 
 </body>
