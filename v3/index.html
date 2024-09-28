@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Type + Code Project 1</title>
+
+    <!-- Required code for using a font from Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+
+    <style>
+        /* Import the Inconsolata font family from google */
+
+        @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+
+        /* Project colors to refer to
+        Blue: #7CB9E8
+        Navy: #002D62
+        White: #ffffff
+		Celeste: #B2FFFF
+		cornflowerblue
+		grey
+		lightgrey
+		*/
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+		
+			/* Keyframes */
+				
+				@keyframes gradient-animation {
+    0% {
+        background: linear-gradient(45deg, #7CB9E8, #002D62);
+    }
+    25% {
+        background: linear-gradient(45deg, #002D62, cornflowerblue);
+    }
+    50% {
+        background: linear-gradient(45deg, lightgrey, cornflowerblue);
+    }
+    75% {
+        background: linear-gradient(45deg, lightgrey, cornflowerblue);
+    }
+    100% {
+        background: linear-gradient(45deg, #7CB9E8, #002D62);
+    }
+}
+	
+		
+		
+		
+        body {
+            font-family: 'Inconsolata', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #7CB9E8;
+			padding: 20px;
+			animation: gradient-animation 10s infinite;
+			background-size:300% 300%;
+        }
+
+        h1 {
+            margin: 20px;
+            color: white;
+            text-align: center;
+			font-size:40px;
+        }
+
+        h2 {
+            margin: 10px;
+            font-size: 20px;
+            color: #002D62;
+            text-align: left;
+        }
+
+        /* Lists */
+
+        ul {
+            list-style-type: none;
+            padding: 10px;
+            margin: 20px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+			gap: 20px;
+            width: 100%;
+			height: auto;
+        }
+
+        ul li {
+            margin: 10px 0;
+            width: 100%;
+			height: auto;
+            max-width: 300px;
+            text-align: center;
+        }
+
+        /* Links */
+
+        a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding: 10px;
+            background-color: #002D62;
+            border-radius: 10px;
+			width: 100%;
+			height: 100px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+            transition: background-color 0.4s ease, transform 0.2s ease;
+        }
+
+        a:hover {
+            background-color: #e8491d;
+            transform: scale(1.05);
+			border-radius:40px;
+			box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Footers */
+
+        footer {
+            margin-top: 20px;
+            color: white;
+            text-align: center;
+            align-items: bottom;
+        }
+
+        /* Media Queries */
+
+        @media only screen and (max-width: 1200px) {
+            body {
+
+            }
+        }
+
+        @media only screen and (max-width: 1000px) {
+            body {
+
+            }
+        }
+
+        @media only screen and (max-width: 800px) {
+            body {
+
+            }
+        }
+
+        @media only screen and (max-width: 600px) {
+            body {
+            }
+        }
+
+        @media only screen and (max-width: 400px) {
+            body {
+
+            }
+
+            @media only screen and (max-width: 400px) {
+                h1 {
+                    margin: 20px;
+					font-size: 48px;
+                    text-align: center;
+                    max-width: 100%;
+                    position: relative;
+                }
+				
+				   @media only screen and (max-width: 400px) {
+                ul {
+                    margin: 0px;
+                     display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+					gap: 0px;
+                }
+				
+			
+    </style>
+</head>
+
+<body>
+
+    <h1>The Quantum Internet Will Blow Your Mind.<br> <span style="color:#002D62;">Here’s What It Will Look Like</span></h1>
+	<br>
+    <h2>The next generation of the Internet will rely on revolutionary new tech — allowing for unhackable networks and information that travels faster than the speed of light.</h2>
+
+    <div>
+        <ul>
+            <li>
+                <a href="https://www.discovermagazine.com/technology/the-quantum-internet-will-blow-your-mind-heres-what-it-will-look-like"
+                    target="_blank">Original Article</a>
+            </li>
+            <li>
+                <a href="v1/" target="_blank">Version 1<br><br>(HTML)</a>
+            </li>
+            <li>
+                <a href="v2/" target="_blank">Version 2<br><br>(HTML + CSS)</a>
+            </li>
+            <li>
+                <a href="v3/" target="_blank">Version 3<br><br>(HTML + CSS +
+                        Flexbox)</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Using &copy to make the copyright symbol -->
+
+
+    <footer>
+        <p>&copy; 2024 Vishakha Ruhela</p>
+    </footer>
+
+</body>
+
+</html>
