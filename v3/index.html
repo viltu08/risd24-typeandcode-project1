@@ -172,7 +172,8 @@
             border: 2px solid #fc9d45;
             border-radius: 10px;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-            padding: 20px;
+            padding-left: 300px;
+			padding-right: 300px;
             max-width: 90%;
             margin: 20px auto;
             display: flex;
@@ -188,8 +189,9 @@
             border: 2px solid #099d02;
             border-radius: 10px;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-            padding: 20px;
-            max-width: 70%;
+            padding-left: 300px;
+			padding-right: 300px;
+            max-width: 90%;
             margin: 20px auto;
             display: flex;
             flex-direction: column;
@@ -203,8 +205,9 @@
             border: 2px solid white;
             border-radius: 10px;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-            padding: 20px;
-            max-width: 70%;
+          padding-left: 300px;
+			padding-right: 300px;
+            max-width: 90%;
             margin: 20px auto;
             display: flex;
             flex-direction: column;
@@ -297,135 +300,74 @@
         }
 		
 		
-/* Media Queries h1 */
+		/* Media Queries */
+		
 @media only screen and (max-width: 1200px) {
+    .text-window, .intro-window, .DIY-window {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
     h1 {
         margin: 20px;
         font-size: 60px;
-        text-align: center;
-        max-width: 100%;
-        position: relative;
         line-height: 60px;
     }
-}
 
-@media only screen and (max-width: 800px) {
-    h1 {
-        margin: 20px;
-        font-size: 60px;
-        text-align: center;
-        max-width: 100%;
-        position: relative;
-        line-height: 60px;
-    }
-}
-
-@media only screen and (max-width: 400px) {
-    h1 {
-        margin: 24px;
-        line-height: 24px;
+    p {
         font-size: 24px;
-        text-align: center;
-        max-width: 100%;
-        position: relative;
     }
-}
-
-/* Media Queries h2 */
-@media only screen and (max-width: 1200px) {
-    h2 {
-        margin: 20px;
-        font-size: 60px;
-        text-align: center;
-        max-width: 100%;
-        position: relative;
-        line-height: 60px;
-    }
-}
-
-@media only screen and (max-width: 800px) {
-    h2 {
-        margin: 20px;
-        font-size: 48px;
-        text-align: center;
-        max-width: 100%;
-        position: relative;
-        line-height: 60px;
-    }
-}
-
-@media only screen and (max-width: 400px) {
-    h2 {
-        margin: 24px;
-        line-height: 24px;
-        font-size: 24px;
-        text-align: center;
-        max-width: 100%;
-        position: relative;
-    }
-}
-
-/* Media Queries ul */
-@media only screen and (max-width: 800px) {
-    ul {
-        margin: 0px;
-        display: flex;
+	
+	 ul {
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .text-window, .intro-window, .DIY-window {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    h1 {
+        margin: 20px;
+        font-size: 50px;
+        line-height: 50px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+	
+	ul {
         gap: 10px;
     }
 }
 
 @media only screen and (max-width: 400px) {
-    ul {
-        margin: 0px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
+    .text-window, .intro-window, .DIY-window {
+        padding-left: 10px;
+        padding-right: 10px;
     }
-}
 
-/* Media Queries body */
-@media only screen and (max-width: 1200px) {
-    body {
+    h1 {
+        margin: 24px;
+        line-height: 30px;
         font-size: 24px;
     }
-}
 
-@media only screen and (max-width: 800px) {
-    body {
-        font-size: 16px;
-    }
-}
-
-@media only screen and (max-width: 400px) {
-    body {
-        font-size: 12px;
-    }
-}
-
-/* Media Queries p */
-@media only screen and (max-width: 1200px) {
-    p {
-        font-size: 24px;
-    }
-}
-
-@media only screen and (max-width: 800px) {
-    p {
-        font-size: 16px;
-    }
-}
-
-@media only screen and (max-width: 400px) {
     p {
         font-size: 12px;
     }
+	
+	 ul {
+        gap: 5px;
+    }
 }
-
+		
     </style>
 </head>
 
