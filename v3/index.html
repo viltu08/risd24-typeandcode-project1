@@ -115,8 +115,8 @@
             color: #23C686;
             background: #010101;
         }
-		
-		h2::selection {
+
+        h2::selection {
             color: #23C686;
             background: #010101;
         }
@@ -210,13 +210,13 @@
             text-align: center;
         }
 
-		/* Quotes */
-		
-		.quote {
-			color: #fbfcf6;
-			transition: color 0.3s ease;
-		}
-		
+        /* Quotes */
+
+        .quote {
+            color: #fbfcf6;
+            transition: color 0.3s ease;
+        }
+
         /* Footers */
 
         footer {
@@ -239,12 +239,13 @@
             border-radius: 40px;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
         }
-		
-		.quote:hover {
-			background-color: #fbfcf6;
-			color: #099d02;	
-			border-radius: 10px;
-		}
+
+        .quote:hover {
+            font-size: 48px;
+            line-height: 48px;
+            border-radius: 10px;
+            padding: 4px;
+        }
 
 
         /* Keyframes */
@@ -294,26 +295,7 @@
         }
 
         /* Media Queries */
-
-        @media only screen and (max-width: 1200px) {
-            body {}
-        }
-
-        @media only screen and (max-width: 1000px) {
-            body {}
-        }
-
-        @media only screen and (max-width: 800px) {
-            body {}
-        }
-
-        @media only screen and (max-width: 600px) {
-            body {}
-        }
-
-        @media only screen and (max-width: 400px) {
-            body {}
-
+		
             @media only screen and (max-width: 400px) {
                 h1 {
                     margin: 20px;
@@ -322,6 +304,7 @@
                     max-width: 100%;
                     position: relative;
                 }
+			}
 
                 @media only screen and (max-width: 400px) {
                     h2 {
@@ -331,6 +314,7 @@
                         max-width: 100%;
                         position: relative;
                     }
+			}
 
 
                     @media only screen and (max-width: 400px) {
@@ -342,6 +326,7 @@
                             justify-content: center;
                             gap: 10px;
                         }
+					}
     </style>
 </head>
 
@@ -369,7 +354,7 @@
     <div class="grid-parent intro-window">
         <section id="introduction">
 
-            <br>
+  
             <p>
                 Call it the quantum Garden of Eden. Fifty or so miles east of New York City, on the campus of Brookhaven
                 National Laboratory, Eden Figueroa is one of the world’s pioneering gardeners planting the seeds of a
@@ -383,10 +368,14 @@
                 saltshaker, a pepper shaker and a small cup of water, and begins moving them around on the lunch table
                 like a magician with cards.
                 <br><br>
-                <span class="quote">“I’m going to have a detector here and a detector here,” </span>he says, pointing to the two lids. <span class="quote">“Now there
-                are many possibilities. Either those two go in here” </span>— he points to the saltshaker — <span class="quote">“or the two go in
-				there,” </span>nodding at the cup of water. <span class="quote">“And then depending on what happened there, that will be the
-				state,” </span>he says, holding up the black pepper shaker, <span class="quote">“that I’m preparing here.”</span>
+                <span class="quote">“I’m going to have a detector here and a detector here,” </span>he says, pointing to
+                the two lids. <span class="quote">“Now there
+                    are many possibilities. Either those two go in here” </span>— he points to the saltshaker — <span
+                    class="quote">“or the two go in
+                    there,” </span>nodding at the cup of water. <span class="quote">“And then depending on what happened
+                    there, that will be the
+                    state,” </span>he says, holding up the black pepper shaker, <span class="quote">“that I’m preparing
+                    here.”</span>
                 <br><br>
                 Got that? Me neither. But don’t worry. Only a few hundred or so physicists in the U.S., Europe and China
                 really comprehend how to exploit some of the weirdest, most far-out aspects of quantum physics. In this
@@ -395,10 +384,12 @@
                 Scientists like Figueroa want to harness that bizarre behavior and turn it into a functioning, new-age
                 internet — one, they say, that will be ironclad for sending secure messages, impervious to hacking.
                 <br><br>
-				Already, Figueroa says his group has transmitted what he called <span class="quote">“polarization states”</span> between the Stony
+                Already, Figueroa says his group has transmitted what he called <span class="quote">“polarization
+                    states”</span> between the Stony
                 Brook and Brookhaven campuses using fiber infrastructure, adding up to 85 miles. Kerstin Kleese van Dam,
-                director of Brookhaven Lab’s Computational Science Initiative, says it is <span class="quote">“one of the largest quantum
-				networks in the world, and the longest in the United States.”</span>
+                director of Brookhaven Lab’s Computational Science Initiative, says it is <span class="quote">“one of
+                    the largest quantum
+                    networks in the world, and the longest in the United States.”</span>
                 <br><br>
                 Next, Figueroa hopes to teleport his quantum-based messages through the air, across Long Island Sound,
                 to Yale University in Connecticut. Then he wants to go 50 miles east, using existing fiber-optic cables
@@ -412,8 +403,9 @@
             <h1 style="color:#002D62;">Untangling Entanglement</h1>
             <p>Leading me to the back room of his laboratory at Stony Brook, where he heads the quantum information
                 technology group, Figueroa shows me a large table covered with a labyrinth of tiny mirrors, lasers and
-				electronics.<span class="quote"> “This is where we create these photons that carry superpositions,” </span>he says, <span class="quote">“that then we
-				can send into the fiber. OK? It’s very simple.”</span>
+                electronics.<span class="quote"> “This is where we create these photons that carry superpositions,”
+                </span>he says, <span class="quote">“that then we
+                    can send into the fiber. OK? It’s very simple.”</span>
                 <br><br>
 
                 Right.
@@ -452,12 +444,15 @@
     <div class="grid-parent text-window">
         <section id="quantum-memories">
             <h1 style="color:#002D62;">Thanks for the Quantum Memories</h1>
-			<p><span class="quote">“It’s just equipment and optics,”</span> he tells me, pointing to an array of lasers and mirrors configured on a
-				large table.<span class="quote"> “This is what people call Lego for adults.” </span>On one end, a laser aims high-energy blue
+            <p><span class="quote">“It’s just equipment and optics,”</span> he tells me, pointing to an array of lasers
+                and mirrors configured on a
+                large table.<span class="quote"> “This is what people call Lego for adults.” </span>On one end, a laser
+                aims high-energy blue
                 photons at a crystal, which breaks each one into a pair of lower-energy red photons; each of the two
                 resulting red photons is now entangled with the other. Figueroa points out the path the photons take
-                from mirror to mirror. <span class="quote">“They do boop, boop, boop, boop, boop-boop-boop-boop. This is why we have this
-				beautiful system. This is working, actually. This is beautiful,” </span>he says.
+                from mirror to mirror. <span class="quote">“They do boop, boop, boop, boop, boop-boop-boop-boop. This is
+                    why we have this
+                    beautiful system. This is working, actually. This is beautiful,” </span>he says.
                 <br><br>
                 Once entangled, one red photon is sent a short distance to a detector in Figueroa’s lab down the hall,
                 while the other can be sent a dozen miles away to a detector at the Brookhaven National Lab. The
@@ -470,15 +465,16 @@
                 containing a fog of trillions of rubidium atoms. That first morning when I visit Figueroa’s lab, he puts
                 one of these tubes in my hand.
                 <br><br>
-				<span class="quote">  “What is it?”</span> I ask him.
+                <span class="quote"> “What is it?”</span> I ask him.
                 <br><br>
-				He smiles and says,<span class="quote"> “A quantum memory.”</span>
+                He smiles and says,<span class="quote"> “A quantum memory.”</span>
                 <br><br>
                 Back when he was pursuing his doctorate at the University of Konstanz in Germany, Figueroa tells me, he
                 had asked his professor if it would be possible to build a system that would work at room temperature
                 without costly, complex freezers.
                 <br><br>
-				<span class="quote"> “I don’t think so,”</span> he was told.<span class="quote"> “But prove me wrong.”</span>
+                <span class="quote"> “I don’t think so,”</span> he was told.<span class="quote"> “But prove me
+                    wrong.”</span>
                 <br><br>
                 So, he did. By bouncing photons off a series of carefully placed mirrors and bombarding a mist of
                 rubidium atoms with a network of lasers, Figueroa discovered that he could tune the wavelengths of
@@ -491,10 +487,12 @@
                 holding quantum memories into a portable device smaller than a carry-on suitcase, small enough to mount
                 on an ordinary rack of computer servers at a data center — a crucial innovation if a quantum internet is
                 ever to go mainstream. As his colleague and collaborator Dimitrios Katramatos tells me later that day:
-              <span class="quote">  “They are portable, right? So, we loaded some of them up in a van one day and brought them from Stony
-				  Brook to Brookhaven.”</span>
+                <span class="quote"> “They are portable, right? So, we loaded some of them up in a van one day and
+                    brought them from Stony
+                    Brook to Brookhaven.”</span>
                 <br><br>
-				<span class="quote"> “He drove his wife’s van,” </span>Figueroa says with a laugh.<span class="quote"> “Ever since we have called it the Quantum Van.”</span>
+                <span class="quote"> “He drove his wife’s van,” </span>Figueroa says with a laugh.<span class="quote">
+                    “Ever since we have called it the Quantum Van.”</span>
             </p>
         </section>
     </div>
@@ -509,18 +507,21 @@
                 destroying its entanglement.
 
                 <br>
-				The proposed solution, Figueroa explains, is something called <span class="quote">“entanglement swapping.”</span> And quantum
+                The proposed solution, Figueroa explains, is something called <span class="quote">“entanglement
+                    swapping.”</span> And quantum
                 engineers around the world are competing to apply the concept to a working prototype.
                 <br>
-				<span class="quote">“The idea has by now been around for 20 years,”</span> says Mikhail Lukin, a leading quantum theoretician and
-                experimentalist at Harvard University.<span class="quote"> “Up to now, no one has succeeded in building one capable of being
-                used in a practical application. As far as I understand, that’s what [Figueroa]’s group is trying to
-				do.”</span>
+                <span class="quote">“The idea has by now been around for 20 years,”</span> says Mikhail Lukin, a leading
+                quantum theoretician and
+                experimentalist at Harvard University.<span class="quote"> “Up to now, no one has succeeded in building
+                    one capable of being
+                    used in a practical application. As far as I understand, that’s what [Figueroa]’s group is trying to
+                    do.”</span>
                 <br>
                 To explain his plan, Figueroa leads me into a small meeting room, where he has it all mapped out on a
                 whiteboard.
                 <br>
-				<span class="quote"> “Let me show you something really cool,”</span> he says.
+                <span class="quote"> “Let me show you something really cool,”</span> he says.
                 <br>
                 Instead of creating only one pair of entangled photons and trying to send it to a lab 100 miles away, he
                 explains, a second set of entangled pairs are created in two different substations located at the
@@ -530,41 +531,50 @@
                 distant laboratories. Once this entanglement has been shared, the information Figueroa wanted to send
                 can be teleported to the lab 100 miles away, overcoming the barrier.
                 <br>
-				<span class="quote"> “You see?”</span> he says with charming enthusiasm. <span class="quote">“Easy.”</span>
+                <span class="quote"> “You see?”</span> he says with charming enthusiasm. <span
+                    class="quote">“Easy.”</span>
             </p>
         </section>
     </div>
+	
     <div class="grid-parent text-window">
         <section id="quantum-future">
             <h1 style="color:#002D62;">The Quantum Future</h1>
             <p>And what about teleporting not just information, not just messages, but also particles, molecules,
                 cells or Captain Kirk? When the first experimental demonstration of entanglement was reported in
-                December 1997, IBM physicist Charles H. Bennett told The New York Times: <span class="quote">“It would be utterly
-				infeasible to do it even on something as small as a bacterium.” </span>(Bennett, it should be pointed out,
+                December 1997, IBM physicist Charles H. Bennett told The New York Times: <span class="quote">“It would
+                    be utterly
+                    infeasible to do it even on something as small as a bacterium.” </span>(Bennett, it should be
+                pointed out,
                 had coined the term quantum teleportation four years earlier, so you would think he would be
                 correct.)
                 <br><br>
                 But 21 years later, in the fall of 2018, Oxford University researchers reported exactly what Bennett
-				had said was <span class="quote">“utterly infeasible”</span>: the entanglement of a living bacterium with a photon of light.
+                had said was <span class="quote">“utterly infeasible”</span>: the entanglement of a living bacterium
+                with a photon of light.
                 Not all physicists were persuaded by the findings, however, based as they were on the Oxford team’s
                 analysis of another group’s experiment. But then, nobody knows how far the quantum revolution will
                 go — certainly not Figueroa.
                 <br><br>
-				<span class="quote">  “Many of the things these devices will do, we are still trying to figure it out,” </span>he tells me. <span class="quote">“At
-                the moment, we are just trying to create technology that works. The really far reaches of what is
-				possible are still to be discovered.”</span>
+                <span class="quote"> “Many of the things these devices will do, we are still trying to figure it out,”
+                </span>he tells me. <span class="quote">“At
+                    the moment, we are just trying to create technology that works. The really far reaches of what is
+                    possible are still to be discovered.”</span>
                 <br><br>
                 Before leaving him, I ask Figueroa how his friends, family and neighbors try to understand his
                 cryptic work. He tells me a story about his father-in-law. Back when Figueroa was conducting
                 postdoctoral research in Germany, his wife’s father came to visit. After giving him a two-hour tour
                 of the lab, Figueroa asked him what he thought of it all.
                 <br><br>
-               <span class="quote"> “I didn’t understand a word you said in there,” his father-in-law said, “but I know it’s the most
-				   amazing thing I have ever seen.”</span>
+                <span class="quote"> “I didn’t understand a word you said in there,” his father-in-law said, “but I know
+                    it’s the most
+                    amazing thing I have ever seen.”</span>
                 <br><br>
                 I could empathize. That’s how I felt before visiting Figueroa, interrogating him repeatedly over the
-				phone, and reading his papers with far-out titles like <span class="quote">“A Single-Atom Quantum Memory” </span>and <span class="quote">“Quantum
-				Memory for Squeezed Light.” </span>But after all that, the whole thing began to make sense to me. And I
+                phone, and reading his papers with far-out titles like <span class="quote">“A Single-Atom Quantum
+                    Memory” </span>and <span class="quote">“Quantum
+                    Memory for Squeezed Light.” </span>But after all that, the whole thing began to make sense to me.
+                And I
                 hope it does now for you, too.
                 <br><br>
                 Kind of.
@@ -576,7 +586,9 @@
     <div class="DIY-window">
         <section id="diy-quantum-internet">
             <h1 style="color:#002D62;">3 Easy Steps to Build <br>a DIY Quantum Internet</h1>
-            <p>
+
+                <hr>
+                <br>
 
                 Step 1. To build a quantum internet, you begin by entangling two photons so they behave like a single
                 unit, no matter how far they might be separated. Easy peasy. To do this, take one high-energy blue
@@ -589,13 +601,20 @@
                 other side of the door, you both have a random, 50-50 chance of seeing one or the other. In the quantum
                 world, everything exists in a statistical blur. But that’s OK, because Brad and Angelina are just your
                 conduit for sending information from one to the other.
+                <br>
+                <br>
+                <hr>
+                <br>
 
                 Step 2. To send a meaningful message from Brad to Angelina, you need a third photon. Let’s call this one
                 Jennifer Aniston. Put Jennifer through a polarizer — like the polarized lenses used in sunglasses — to
                 set her atomic pole to a particular position on the vertical and horizontal axes. This gives you a
                 quantum bit, or qubit, which can be a 0 or 1 at the same time. Similar to the 0s and 1s of digital data,
                 qubits can be strung together to encode any message you want to send — say, the script for a new movie.
-
+                <br>
+			<br>
+                <hr>
+                <br>
                 Step 3. You’re almost there! Now you need to entangle the qubit called Jennifer with the photon called
                 Brad, who you’ve been hanging onto ever since you sent Angelina to Spielberg. To do that, put both
                 Jennifer and Brad into a beam splitter. When you do, Jennifer becomes entangled not only with Brad, but
@@ -610,10 +629,11 @@
 
                 You did it! Now you can only hope Spielberg remembers to thank you at the Oscars. — D.H.
 
+		</section>
+		<p>
+			
+		</p>
+	</div>
 
-            </p>
-        </section>
-    </div>
 </body>
-
 </html>
