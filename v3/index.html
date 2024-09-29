@@ -54,30 +54,10 @@
             border: 10px solid black;
         }
 		
+		/* Basic Body Background and Structure */
 		
-/* Keyframes */
-				
-				@keyframes gradient-animation {
-    0% {
-        background: linear-gradient(45deg, #7CB9E8, #002D62);
-    }
-    25% {
-        background: linear-gradient(45deg, #002D62, cornflowerblue);
-    }
-    50% {
-        background: linear-gradient(45deg, lightgrey, cornflowerblue);
-    }
-    75% {
-        background: linear-gradient(45deg, lightgrey, cornflowerblue);
-    }
-    100% {
-        background: linear-gradient(45deg, #7CB9E8, #002D62);
-    }
-}
-	
-
-        body {
-            font-family: 'Inconsolata', sans-serif;
+		body {
+            font-family: 'Mukta', sans-serif;
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
@@ -92,44 +72,74 @@
 			background-size:300% 300%;
 			overflow-x: hidden;
         }
-
-        p {
+		
+		 p {
             font-family: 'Mukta';
+			 font-size: 30px;
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
             padding: 100px;
-            margin-left: 200px;
-            margin-right: 200px;
-			margin-top: 10px;
-			margin-bottom: 10px;
+			 margin-right: 10px;
+			 margin-left:10px;
             text-align: left;
             justify-content: center;
             width: 80%;
             height: auto;
         }
-
-        h1 {
-            margin-top: 30px;
-			margin-bottom: 10px;
+		
+		/* Header styling */
+		
+		.header-container {
+		width: 100%;
+        }
+		
+		.header-container ::selection {
+            color: #23C686;
+            background: #010101;
+        }
+		
+		/* headings styling */
+		
+		 h1 {
             color: white;
             text-align: center;
+			 line-height: 100px;
             font-size: 75px;
+            transition: color 0.3s ease;
         }
 
         h2 {
-            margin-top: 10px;
-			margin-bottom: 10px;
-            font-size: 50px;
-            color: white;
-            text-align: left;
-            padding: 10px;
-            margin-left: 200px;
-            margin-right: 200px;
-
+            font-family: 'Inconsolata', sans-serif;
+            color: #1D3853;
+            text-align: center;
+            font-size: 20px;
         }
 
-        /* Lists */
+        h2::selection {
+            color: #23C686;
+            background: #010101;
+        }
+		
+		/* Link */
+		
+			 a {
+            text-decoration: none;
+            color: #002D62;
+            font-weight: bold;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            border-radius: 10px;
+            width: 100%;
+            height: 70px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.4s ease, transform 0.2s ease;
+        }
+		 /* Lists */
 
         ul {
             list-style-type: none;
@@ -151,110 +161,75 @@
             text-align: center;
         }
 
-        /* Links */
 
-        a {
-            text-decoration: none;
-            color: #002D62;
-            font-weight: bold;
-            padding: 10px;
-            background-color: rgba(255, 255, 255, 0.2);
-            backdrop-filter: blur(10px);
-            border-radius: 10px;
-            width: 100%;
-            height: 50px;
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: center;
-            transition: background-color 0.4s ease, transform 0.2s ease;
+		/* Section container styling*/
+		
+				.text-window {
+    background-color: #fbfcf6;
+			color: #010101;
+			 background-color: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(200px);
+    border: 2px solid #fc9d45;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    padding: 50px;
+    max-width: 70%;
+			margin-bottom: 20px;
+}
+		
+		 /* Footers */
+
+        footer {
+            font-family: 'Inconsolata', sans-serif;
+            font-size: 10px;
+            margin-top: 20px;
+            color: white;
+            text-align: center;
+        }
+		
+		/* Hover effect */
+ h1:hover {
+            color: #010101;
+            animation: vibrate 0.3s ease-in-out infinite;
         }
 
         a:hover {
             background-color: #fc9d45;
-            transform: scale(1.1);
-            border-radius: 40px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-        }
-
-        a2 {
-            text-decoration: none;
-            color: #002D62;
-            font-weight: bold;
-            padding: 10px;
-            background-color: rgba(255, 255, 255, 0.2);
-            backdrop-filter: blur(10px);
-            border-radius: 10px;
-            width: 100%;
-            height: 50px;
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: center;
-        }
-
-        a2:hover {
-            background-color: #1D3853;
             color: #fbfcf6;
             border-radius: 40px;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
         }
-		
-		.text-window {
-    background-color: #fbfcf6;
-			color: #010101;
-			 background-color: rgba(255, 255, 255, 0.2);
-            backdrop-filter: blur(10px);
-    border: 2px solid #fc9d45;
-    border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-    padding: 10px;
-    width: 50%hv;
-    max-width: 90%;
-			margin-bottom: 20px;
+
+	
+		/* Keyframes */
+				
+				@keyframes gradient-animation {
+    0% {
+        background: linear-gradient(45deg, #7CB9E8, #002D62);
+    }
+    25% {
+        background: linear-gradient(45deg, #002D62, cornflowerblue);
+    }
+    50% {
+        background: linear-gradient(45deg, lightgrey, cornflowerblue);
+    }
+    75% {
+        background: linear-gradient(45deg, lightgrey, cornflowerblue);
+    }
+    100% {
+        background: linear-gradient(45deg, #7CB9E8, #002D62);
+    }
 }
 		
-		.quote {
-		font-family: 'Inconsolata', sans-serif; 
-			font-size: 48px;
-			display: inline;
-		}
-		
-			quote:hover {
-			background-color: #099d02;
-			border-radius: 20px;
-			color: #099d02;
-		}
-		
-				/* Vibrating words*/
-		
-			@keyframes vibrate {
-  0% { transform: translate(0); }
-  10% { transform: translate(-2px, 2px); }
-  20% { transform: translate(2px, -2px); }
-  30% { transform: translate(-2px, 2px); }
-  40% { transform: translate(2px, -2px); }
-  50% { transform: translate(0); }
-  100% { transform: translate(0); }
+		@keyframes vibrate {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-2px); }
+    50% { transform: translateX(2px); }
+    75% { transform: translateX(-2px); }
+    100% { transform: translateX(0); }
 }
-
-.vibrating-text {
-  animation: vibrate 0.1s infinite;
-	display: inline;
-}
-
-        /* Footers */
-
-        footer {
-            margin-top: 20px;
-            color: white;
-            text-align: center;
-            align-items: bottom;
-        }
-
-
-
-        /* Media Queries */
+		
+		 /* Media Queries */
 
         @media only screen and (max-width: 1200px) {
             body {}
@@ -303,12 +278,13 @@
                             justify-content: center;
                             gap: 10px;
                         }
-    </style>
-</head>
-
-<body>
-
-    <div class="grid-parent">
+		
+	</style>
+		</head>
+	
+	<body>
+		
+		<div class="grid-parent">
 
         <ul>
             <li>
@@ -330,59 +306,18 @@
                 <a href="" target="_blank">DIY Quantum Internet</a>
             </li>
         </ul>
-
-        <h1>The Quantum Internet <br>Will Blow Your Mind.<br> <span style="color:#c5d893;"><br>Here’s What It Will Look
-                Like</span></h1>
-
-        <h2>The next generation of the Internet will rely on revolutionary new tech — allowing for unhackable networks
-            and information that travels faster than the speed of light.</h2>
-
-    </div>
-    <div class="a2">
-
-        <a href="https://www.discovermagazine.com/author/dhurley/1" target="_blank">By Dan Hurley</a>
-    </div>
-
-    <br>
-    <br>
-
-
-  <div class="grid-parent">
-    <p>
-        Call it the Quantum Garden of Eden. Fifty or so miles east of New York City, on the campus of Brookhaven National Laboratory, Eden Figueroa is one of the world’s pioneering gardeners planting the seeds of a quantum internet. Capable of sending enormous amounts of data over vast distances, it would work not just faster than the current internet but faster than the speed of light — instantaneously, in fact, like the teleportation of Mr. Spock and Captain Kirk in Star Trek.
-
-        Sitting in Brookhaven’s light-filled cafeteria, his shoulder-length black hair fighting to free itself from the clutches of a ponytail, Figueroa — a Mexico native who is an associate professor at Stony Brook University — tries to explain how it will work. He grabs hold of two plastic coffee cup lids, a saltshaker, a pepper shaker and a small cup of water, and begins moving them around on the lunch table like a magician with cards.
-
-        <span class='quote'> “I’m going to have a detector here and a detector here,”</span> he says, pointing to the two lids. “Now there are many possibilities. Either those two go in here” — he points to the saltshaker — “or the two go in there,” nodding at the cup of water. “And then depending on what happened there, that will be the state,” he says, holding up the black pepper shaker, “that I’m preparing here.”
-
-        Got that? Me neither. But don’t worry. Only a few hundred or so physicists in the U.S., Europe and China really comprehend how to exploit some of the weirdest, most far-out aspects of quantum physics. In this strange arena, objects can exist in two or more states at the same time, called superpositions; they can interact with each other instantly over long distances; they can flash in and out of existence. Scientists like Figueroa want to harness that bizarre behavior and turn it into a functioning, new-age internet — one, they say, that will be ironclad for sending secure messages, impervious to hacking.
-
-        Already, Figueroa says his group has transmitted what he called “polarization states” between the Stony Brook and Brookhaven campuses using fiber infrastructure, adding up to 85 miles. Kerstin Kleese van Dam, director of Brookhaven Lab’s Computational Science Initiative, says it is “one of the largest quantum networks in the world, and the longest in the United States.”
-
-        Next, Figueroa hopes to teleport his quantum-based messages through the air, across Long Island Sound, to Yale University in Connecticut. Then he wants to go 50 miles east, using existing fiber-optic cables to connect with Long Island and Manhattan.
+		</div>
 		
-        <br><br>
-		
-        Kleese Van Dam says that although other groups in Europe and China have more funding and have been working much longer on the technology, in the U.S. “[Figueroa] is leading when it comes to having the knowledge and the equipment necessary to put together a quantum network in the next year or two.”
+		<div class="header-container">
+        <h1>The Quantum Internet Will</h1>
+        <h1>Blow Your Mind.</h1>
+        <h1>Here's what it will</h1>
+        <h1>look like.</h1>
+		</div>
 
-        David Awschalom, a legend in the field who is a professor of spintronics and quantum information at the University of Chicago’s Pritzker School of Molecular Engineering and director of the Chicago Quantum Exchange, calls Figueroa’s work “a fantastic project being done very thoughtfully and very well. I’m always cautious about saying something is the biggest or fastest,” he says. “It’s a worldwide effort right now in building prototype quantum networks as the next step toward building a quantum internet.” Other efforts to build quantum networks, he says, are underway in Japan, the U.K., the Netherlands and China — not to mention his own group’s project in Chicago.
-
-        U.S. efforts have lately been given a boost by the U.S. Department of Energy’s announcement in January that it would spend as much as $625 million to fund two to five quantum research centers. The move is part of the U.S. National Quantum Initiative signed into law by President Donald Trump on Dec. 21, 2018.
-
-        But what, really, is this thing called a quantum internet? How does it work? Figueroa, enraptured by his vision, told me of his plan with contagious enthusiasm, laughing sometimes as if it were all so simple that a child (or even an English major) could understand it. Not wanting to disappoint, I nodded my head and pretended that I knew what the hell he was talking about.
-		
-        <br><br>
-		
-        And, after spending two days with Figueroa last summer, following him around the campus of Brookhaven and the nearby Stony Brook, getting a firsthand look at his futuristic equipment, talking with other physicists around the world, reading a few books and perusing dozens of articles and studies, I began to kind of, sort of, get it. Not in all its unsettling depths, but in the general way that I understand how an internal-combustion engine goes vroom or why a toilet bowl flushes. And you can, too.
-    </p>
-</div>
-  
-
-    </div>
-	
-	<br><br>
- <div class="text-window">
+		 <div class="text-window">
         <h1 style="color:#002D62;">Untangling Entanglement</h1>
+			 <br>
         <p>Leading me to the back room of his laboratory at Stony Brook, where he heads the quantum information technology group, Figueroa shows me a large table covered with a labyrinth of tiny mirrors, lasers and electronics. “This is where we create these photons that carry superpositions,” he says, “that then we can send into the fiber. OK? It’s very simple.”
 			<br><br>
 
@@ -398,76 +333,5 @@ Think on that. A single particle of light was in two places at once. That meant 
 <br><br>
 But how, I ask Figueroa, do all these wild ideas work in practice, with nuts and bolts and physical devices?</p>
     </div>
-	 <div class="text-window">
-        <h1 style="color:#002D62;">Thanks for the Quantum Memories</h1>
-        <p>“It’s just equipment and optics,” he tells me, pointing to an array of lasers and mirrors configured on a large table. “This is what people call Lego for adults.” On one end, a laser aims high-energy blue photons at a crystal, which breaks each one into a pair of lower-energy red photons; each of the two resulting red photons is now entangled with the other. Figueroa points out the path the photons take from mirror to mirror. “They do boop, boop, boop, boop, boop-boop-boop-boop. This is why we have this beautiful system. This is working, actually. This is beautiful,” he says.
-<br><br>
-Once entangled, one red photon is sent a short distance to a detector in Figueroa’s lab down the hall, while the other can be sent a dozen miles away to a detector at the Brookhaven National Lab. The differing distances would cause the two photons’ arrival times to fall slightly out of sync, which would disrupt their entanglement. To prevent that, Figueroa had to find a way to coordinate the arrival times of each down to the sub-nanosecond.
-<br><br>
-But how? Other quantum labs freeze their stay-at-home photons to near-absolute zero as a way of tapping the brakes. Figueroa’s innovation, by contrast, works at room temperature: an inch-long glass tube containing a fog of trillions of rubidium atoms. That first morning when I visit Figueroa’s lab, he puts one of these tubes in my hand.
-<br><br>
-“What is it?” I ask him.
-<br><br>
-He smiles and says, “A quantum memory.”
-<br><br>
-Back when he was pursuing his doctorate at the University of Konstanz in Germany, Figueroa tells me, he had asked his professor if it would be possible to build a system that would work at room temperature without costly, complex freezers.
-<br><br>
-“I don’t think so,” he was told. “But prove me wrong.”
-<br><br>
-So, he did. By bouncing photons off a series of carefully placed mirrors and bombarding a mist of rubidium atoms with a network of lasers, Figueroa discovered that he could tune the wavelengths of entangled photons to broadcast a signal that electrons in the rubidium fog could receive. Voila! The entangled state of the photon is transferred, momentarily, into the entire cloud of atoms. A fraction of a nanosecond later, the entangled photon moves on, arriving at the detector at the same moment as its twin.
-<br><br>
-Incredibly, since completing his doctorate in 2012, igueroa has miniaturized the entire system for holding quantum memories into a portable device smaller than a carry-on suitcase, small enough to mount on an ordinary rack of computer servers at a data center — a crucial innovation if a quantum internet is ever to go mainstream. As his colleague and collaborator Dimitrios Katramatos tells me later that day: “They are portable, right? So, we loaded some of them up in a van one day and brought them from Stony Brook to Brookhaven.”
-<br><br>
-“He drove his wife’s van,” Figueroa says with a laugh. “Ever since we have called it the Quantum Van.”</p>
-    </div>
-	
-	<div class="text-window">
-        <h1 style="color:#002D62;">Entanglement Swapping</h1>
-        <p>Another problem remains, however — one that neither Figueroa nor Katramatos (nor any other quantum engineer in the world) has fully figured out so far: how to successfully transmit quantum-entangled photons via fiber-optic cables past a barrier that appears around the 60-mile mark. Beyond it, photons unintentionally interact with the cable, its housing or even sunlight from above-ground, thereby destroying its entanglement.
-		<br>
-		<br>
-		The proposed solution, Figueroa explains, is something called “entanglement swapping.” And quantum engineers around the world are competing to apply the concept to a working prototype.
-<br>
-		<br>
-“The idea has by now been around for 20 years,” says Mikhail Lukin, a leading quantum theoretician and experimentalist at Harvard University. “Up to now, no one has succeeded in building one capable of being used in a practical application. As far as I understand, that’s what [Figueroa]’s group is trying to do.”
-<br>
-		<br>
-To explain his plan, Figueroa leads me into a small meeting room, where he has it all mapped out on a whiteboard.
-<br>
-		<br>
-“Let me show you something really cool,” he says.
-<br>
-		<br>
-Instead of creating only one pair of entangled photons and trying to send it to a lab 100 miles away, he explains, a second set of entangled pairs are created in two different substations located at the 25-mile and 75-mile marks. These substations will shoot one photon of the pair toward each other and the other toward the closest of the two labs. When one photon from each of the two pairs meets at the 50-mile mark, they will become entangled, automatically entangling the other remaining photons in the distant laboratories. Once this entanglement has been shared, the information Figueroa wanted to send can be teleported to the lab 100 miles away, overcoming the barrier.
-<br>
-		<br>
-“You see?” he says with charming enthusiasm. “Easy.”
-
-</p>
-    </div>
-		<div class="text-window">
-        <h1 style="color:#002D62;">The Quantum Future</h1>
-        <p>And what about teleporting not just information, not just messages, but also particles, molecules, cells or Captain Kirk? When the first experimental demonstration of entanglement was reported in December 1997, IBM physicist Charles H. Bennett told The New York Times: “It would be utterly infeasible to do it even on something as small as a bacterium.” (Bennett, it should be pointed out, had coined the term quantum teleportation four years earlier, so you would think he would be correct.)
-<br><br>
-But 21 years later, in the fall of 2018, Oxford University researchers reported exactly what Bennett had said was “utterly infeasible”: the entanglement of a living bacterium with a photon of light. Not all physicists were persuaded by the findings, however, based as they were on the Oxford team’s analysis of another group’s experiment. But then, nobody knows how far the quantum revolution will go — certainly not Figueroa.
-			<br><br>
-			“Many of the things these devices will do, we are still trying to figure it out,” he tells me. “At the moment, we are just trying to create technology that works. The really far reaches of what is possible are still to be discovered.”
-<br><br>
-Before leaving him, I ask Figueroa how his friends, family and neighbors try to understand his cryptic work. He tells me a story about his father-in-law. Back when Figueroa was conducting postdoctoral research in Germany, his wife’s father came to visit. After giving him a two-hour tour of the lab, Figueroa asked him what he thought of it all.
-<br><br>
-“I didn’t understand a word you said in there,” his father-in-law said, “but I know it’s the most amazing thing I have ever seen.”
-<br><br>
-I could empathize. That’s how I felt before visiting Figueroa, interrogating him repeatedly over the phone, and reading his papers with far-out titles like “A Single-Atom Quantum Memory” and “Quantum Memory for Squeezed Light.” But after all that, the whole thing began to make sense to me. And I hope it does now for you, too.
-<br><br>
-Kind of.
-			</p>
-	</div>
-	
-    <footer>
-        <p2>&copy; 2024 Vishakha Ruhela<br> Oct 3, 2020 7:00 PM <br>
-            Last updated: Oct 7, 2020 8:55 AM</p2>
-    </footer>
-
-</body>
-
+	</body>
 </html>
