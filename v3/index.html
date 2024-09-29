@@ -53,7 +53,28 @@
             height: 80px;
             border: 10px solid black;
         }
-
+		
+		
+/* Keyframes */
+				
+				@keyframes gradient-animation {
+    0% {
+        background: linear-gradient(45deg, #7CB9E8, #002D62);
+    }
+    25% {
+        background: linear-gradient(45deg, #002D62, cornflowerblue);
+    }
+    50% {
+        background: linear-gradient(45deg, lightgrey, cornflowerblue);
+    }
+    75% {
+        background: linear-gradient(45deg, lightgrey, cornflowerblue);
+    }
+    100% {
+        background: linear-gradient(45deg, #7CB9E8, #002D62);
+    }
+}
+	
 
         body {
             font-family: 'Inconsolata', sans-serif;
@@ -66,8 +87,10 @@
             background-repeat: no-repeat;
             background: linear-gradient(45deg, #23C686, #1D3853);
             padding: 20px;
-            background-size: 200% 200%;
             background-position: center;
+			animation: gradient-animation 10s infinite;
+			background-size:300% 300%;
+			overflow-x: hidden;
         }
 
         p {
@@ -190,7 +213,35 @@
     max-width: 90%;
 			margin-bottom: 20px;
 }
+		
+		.quote {
+		font-family: 'Inconsolata', sans-serif; 
+			font-size: 48px;
+			display: inline;
+		}
+		
+			quote:hover {
+			background-color: #099d02;
+			border-radius: 20px;
+			color: #099d02;
+		}
+		
+				/* Vibrating words*/
+		
+			@keyframes vibrate {
+  0% { transform: translate(0); }
+  10% { transform: translate(-2px, 2px); }
+  20% { transform: translate(2px, -2px); }
+  30% { transform: translate(-2px, 2px); }
+  40% { transform: translate(2px, -2px); }
+  50% { transform: translate(0); }
+  100% { transform: translate(0); }
+}
 
+.vibrating-text {
+  animation: vibrate 0.1s infinite;
+	display: inline;
+}
 
         /* Footers */
 
@@ -280,7 +331,7 @@
             </li>
         </ul>
 
-        <h1>The Quantum Internet <br>Will Blow Your Mind.<br> <span style="color:#002D62;"><br>Here’s What It Will Look
+        <h1>The Quantum Internet <br>Will Blow Your Mind.<br> <span style="color:#c5d893;"><br>Here’s What It Will Look
                 Like</span></h1>
 
         <h2>The next generation of the Internet will rely on revolutionary new tech — allowing for unhackable networks
@@ -296,56 +347,36 @@
     <br>
 
 
-    <div class=grid-parent>
-        <p>
-            Call it the quantum Garden of Eden. Fifty or so miles east of New York City, on the campus of Brookhaven
-            National Laboratory, Eden Figueroa is one of the world’s pioneering gardeners planting the seeds of a
-            quantum internet. Capable of sending enormous amounts of data over vast distances, it would work not just
-            faster than the current internet but faster than the speed of light — instantaneously, in fact, like the
-            teleportation of Mr. Spock and Captain Kirk in Star Trek.
+  <div class="grid-parent">
+    <p>
+        Call it the Quantum Garden of Eden. Fifty or so miles east of New York City, on the campus of Brookhaven National Laboratory, Eden Figueroa is one of the world’s pioneering gardeners planting the seeds of a quantum internet. Capable of sending enormous amounts of data over vast distances, it would work not just faster than the current internet but faster than the speed of light — instantaneously, in fact, like the teleportation of Mr. Spock and Captain Kirk in Star Trek.
 
-            Sitting in Brookhaven’s light-filled cafeteria, his shoulder-length black hair fighting to free itself from
-            the clutches of a ponytail, Figueroa — a Mexico native who is an associate professor at Stony Brook
-            University — tries to explain how it will work. He grabs hold of two plastic coffee cup lids, a saltshaker,
-            a pepper shaker and a small cup of water, and begins moving them around on the lunch table like a magician
-            with cards.
+        Sitting in Brookhaven’s light-filled cafeteria, his shoulder-length black hair fighting to free itself from the clutches of a ponytail, Figueroa — a Mexico native who is an associate professor at Stony Brook University — tries to explain how it will work. He grabs hold of two plastic coffee cup lids, a saltshaker, a pepper shaker and a small cup of water, and begins moving them around on the lunch table like a magician with cards.
 
-            “I’m going to have a detector here and a detector here,” he says, pointing to the two lids. “Now there are
-            many possibilities. Either those two go in here” — he points to the saltshaker — “or the two go in there,”
-            nodding at the cup of water. “And then depending on what happened there, that will be the state,” he says,
-            holding up the black pepper shaker, “that I’m preparing here.”
+        <span class='quote'> “I’m going to have a detector here and a detector here,”</span> he says, pointing to the two lids. “Now there are many possibilities. Either those two go in here” — he points to the saltshaker — “or the two go in there,” nodding at the cup of water. “And then depending on what happened there, that will be the state,” he says, holding up the black pepper shaker, “that I’m preparing here.”
 
-            Got that? Me neither. But don’t worry. Only a few hundred or so physicists in the U.S., Europe and China
-            really comprehend how to exploit some of the weirdest, most far-out aspects of quantum physics. In this
-            strange arena, objects can exist in two or more states at the same time, called superpositions; they can
-            interact with each other instantly over long distances; they can flash in and out of existence. Scientists
-            like Figueroa want to harness that bizarre behavior and turn it into a functioning, new-age internet — one,
-            they say, that will be ironclad for sending secure messages, impervious to hacking.
+        Got that? Me neither. But don’t worry. Only a few hundred or so physicists in the U.S., Europe and China really comprehend how to exploit some of the weirdest, most far-out aspects of quantum physics. In this strange arena, objects can exist in two or more states at the same time, called superpositions; they can interact with each other instantly over long distances; they can flash in and out of existence. Scientists like Figueroa want to harness that bizarre behavior and turn it into a functioning, new-age internet — one, they say, that will be ironclad for sending secure messages, impervious to hacking.
 
-            Already, Figueroa says his group has transmitted what he called “polarization states” between the Stony
-            Brook and Brookhaven campuses using fiber infrastructure, adding up to 85 miles. Kerstin Kleese van Dam,
-            director of Brookhaven Lab’s Computational Science Initiative, says it is “one of the largest quantum
-            networks in the world, and the longest in the United States.”
+        Already, Figueroa says his group has transmitted what he called “polarization states” between the Stony Brook and Brookhaven campuses using fiber infrastructure, adding up to 85 miles. Kerstin Kleese van Dam, director of Brookhaven Lab’s Computational Science Initiative, says it is “one of the largest quantum networks in the world, and the longest in the United States.”
 
-            Next, Figueroa hopes to teleport his quantum-based messages through the air, across Long Island Sound, to
-            Yale University in Connecticut. Then he wants to go 50 miles east, using existing fiber-optic cables to
-            connect with Long Island and Manhattan.
-			
-			<br><br>
-			
-			Kleese Van Dam says that although other groups in Europe and China have more funding and have been working much longer on the technology, in the U.S. “[Figueroa] is leading when it comes to having the knowledge and the equipment necessary to put together a quantum network in the next year or two.”
+        Next, Figueroa hopes to teleport his quantum-based messages through the air, across Long Island Sound, to Yale University in Connecticut. Then he wants to go 50 miles east, using existing fiber-optic cables to connect with Long Island and Manhattan.
+		
+        <br><br>
+		
+        Kleese Van Dam says that although other groups in Europe and China have more funding and have been working much longer on the technology, in the U.S. “[Figueroa] is leading when it comes to having the knowledge and the equipment necessary to put together a quantum network in the next year or two.”
 
-David Awschalom, a legend in the field who is a professor of spintronics and quantum information at the University of Chicago’s Pritzker School of Molecular Engineering and director of the Chicago Quantum Exchange, calls Figueroa’s work “a fantastic project being done very thoughtfully and very well. I’m always cautious about saying something is the biggest or fastest,” he says. “It’s a worldwide effort right now in building prototype quantum networks as the next step toward building a quantum internet.” Other efforts to build quantum networks, he says, are underway in Japan, the U.K., the Netherlands and China — not to mention his own group’s project in Chicago.
+        David Awschalom, a legend in the field who is a professor of spintronics and quantum information at the University of Chicago’s Pritzker School of Molecular Engineering and director of the Chicago Quantum Exchange, calls Figueroa’s work “a fantastic project being done very thoughtfully and very well. I’m always cautious about saying something is the biggest or fastest,” he says. “It’s a worldwide effort right now in building prototype quantum networks as the next step toward building a quantum internet.” Other efforts to build quantum networks, he says, are underway in Japan, the U.K., the Netherlands and China — not to mention his own group’s project in Chicago.
 
-U.S. efforts have lately been given a boost by the U.S. Department of Energy’s announcement in January that it would spend as much as $625 million to fund two to five quantum research centers. The move is part of the U.S. National Quantum Initiative signed into law by President Donald Trump on Dec. 21, 2018.
+        U.S. efforts have lately been given a boost by the U.S. Department of Energy’s announcement in January that it would spend as much as $625 million to fund two to five quantum research centers. The move is part of the U.S. National Quantum Initiative signed into law by President Donald Trump on Dec. 21, 2018.
 
-But what, really, is this thing called a quantum internet? How does it work? Figueroa, enraptured by his vision, told me of his plan with contagious enthusiasm, laughing sometimes as if it were all so simple that a child (or even an English major) could understand it. Not wanting to disappoint, I nodded my head and pretended that I knew what the hell he was talking about.
-			
-			<br><br>
-			
-			And, after spending two days with Figueroa last summer, following him around the campus of Brookhaven and the nearby Stony Brook, getting a firsthand look at his futuristic equipment, talking with other physicists around the world, reading a few books and perusing dozens of articles and studies, I began to kind of, sort of, get it. Not in all its unsettling depths, but in the general way that I understand how an internal-combustion engine goes vroom or why a toilet bowl flushes. And you can, too.
-			
-		  </p>      
+        But what, really, is this thing called a quantum internet? How does it work? Figueroa, enraptured by his vision, told me of his plan with contagious enthusiasm, laughing sometimes as if it were all so simple that a child (or even an English major) could understand it. Not wanting to disappoint, I nodded my head and pretended that I knew what the hell he was talking about.
+		
+        <br><br>
+		
+        And, after spending two days with Figueroa last summer, following him around the campus of Brookhaven and the nearby Stony Brook, getting a firsthand look at his futuristic equipment, talking with other physicists around the world, reading a few books and perusing dozens of articles and studies, I began to kind of, sort of, get it. Not in all its unsettling depths, but in the general way that I understand how an internal-combustion engine goes vroom or why a toilet bowl flushes. And you can, too.
+    </p>
+</div>
+  
 
     </div>
 	
