@@ -76,6 +76,7 @@
             font-size: 30px;
             text-align: left;
             padding: 40px;
+			overflow-wrap: break-word;
         }
 
         p::selection {
@@ -172,12 +173,13 @@
             border-radius: 10px;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
             padding: 20px;
-            max-width: 70%;
+            max-width: 90%;
             margin: 20px auto;
             display: flex;
             flex-direction: column;
             align-items: center;
             text-align: center;
+			overflow: hidden;
         }
 
         .intro-window {
@@ -293,40 +295,137 @@
                 transform: translateX(0);
             }
         }
-
-        /* Media Queries */
 		
-            @media only screen and (max-width: 400px) {
-                h1 {
-                    margin: 20px;
-                    font-size: 24px;
-                    text-align: center;
-                    max-width: 100%;
-                    position: relative;
-                }
-			}
+		
+/* Media Queries h1 */
+@media only screen and (max-width: 1200px) {
+    h1 {
+        margin: 20px;
+        font-size: 60px;
+        text-align: center;
+        max-width: 100%;
+        position: relative;
+        line-height: 60px;
+    }
+}
 
-                @media only screen and (max-width: 400px) {
-                    h2 {
-                        margin: 20px;
-                        font-size: 12px;
-                        text-align: center;
-                        max-width: 100%;
-                        position: relative;
-                    }
-			}
+@media only screen and (max-width: 800px) {
+    h1 {
+        margin: 20px;
+        font-size: 60px;
+        text-align: center;
+        max-width: 100%;
+        position: relative;
+        line-height: 60px;
+    }
+}
 
+@media only screen and (max-width: 400px) {
+    h1 {
+        margin: 24px;
+        line-height: 24px;
+        font-size: 24px;
+        text-align: center;
+        max-width: 100%;
+        position: relative;
+    }
+}
 
-                    @media only screen and (max-width: 400px) {
-                        ul {
-                            margin: 0px;
-                            display: flex;
-                            flex-direction: column;
-                            align-items: center;
-                            justify-content: center;
-                            gap: 10px;
-                        }
-					}
+/* Media Queries h2 */
+@media only screen and (max-width: 1200px) {
+    h2 {
+        margin: 20px;
+        font-size: 60px;
+        text-align: center;
+        max-width: 100%;
+        position: relative;
+        line-height: 60px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    h2 {
+        margin: 20px;
+        font-size: 48px;
+        text-align: center;
+        max-width: 100%;
+        position: relative;
+        line-height: 60px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    h2 {
+        margin: 24px;
+        line-height: 24px;
+        font-size: 24px;
+        text-align: center;
+        max-width: 100%;
+        position: relative;
+    }
+}
+
+/* Media Queries ul */
+@media only screen and (max-width: 800px) {
+    ul {
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    ul {
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+}
+
+/* Media Queries body */
+@media only screen and (max-width: 1200px) {
+    body {
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    body {
+        font-size: 12px;
+    }
+}
+
+/* Media Queries p */
+@media only screen and (max-width: 1200px) {
+    p {
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    p {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    p {
+        font-size: 12px;
+    }
+}
+
     </style>
 </head>
 
